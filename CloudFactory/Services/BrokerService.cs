@@ -9,8 +9,6 @@ namespace CloudFactory.Services
 	{
 		private readonly string _folderRequest = "request/";
 
-		private readonly string _folderResponse = "response/";
-
 		private const string _requestExtension = ".req";
 
 		private const string _responseExtension = ".res";
