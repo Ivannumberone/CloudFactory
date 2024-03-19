@@ -130,6 +130,13 @@ namespace CloudFactory.Services
 					result = (StatusCodes.Status500InternalServerError, string.Empty);
 				}
 			}
+			else
+			{
+				if (File.Exists (pathResponse))
+				{
+					File.Delete(pathResponse);
+				}
+			}
 			return result;
 		}
 
